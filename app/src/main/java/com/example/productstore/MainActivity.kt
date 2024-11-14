@@ -29,13 +29,15 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             if((binding.RG[0] as RadioButton).isChecked){
-                dost ="сам"
+                dost =(binding.RG[0] as RadioButton).text.toString()
             }
             else if((binding.RG[1] as RadioButton).isChecked){
-                dost = "дроны"
+                dost =(binding.RG[1] as RadioButton).text.toString()
+
             }
             else if((binding.RG[2] as RadioButton).isChecked){
-                dost = "курьер"
+                dost =(binding.RG[2] as RadioButton).text.toString()
+
             }
             sal = binding.S.isChecked
             tip = binding.Ed.text.toString().toInt()
